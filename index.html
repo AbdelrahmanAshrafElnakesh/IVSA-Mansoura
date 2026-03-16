@@ -38,7 +38,7 @@
         }
 
         .hero-bg {
-            background: linear-gradient(rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.6)), url('/Images/Hero\ Section\ Background.jpg');
+            background: linear-gradient(rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.6)), url('/Images/Hero\ Section.jpeg');
             background-size: cover;
             background-position: center;
             border-radius: 2rem;
@@ -286,13 +286,15 @@
 </head>
 <body class="antialiased p-2 md:p-4 overflow-x-hidden">
 
-    <!-- Floating Navigation - Responsive -->
+    <!-- Floating Navigation - Responsive (added Announcements) -->
     <nav id="navbar" class="fixed top-2 md:top-4 left-1/2 z-50">
         <div class="floating-nav-container px-3 md:px-6 py-1 nav-grid">
-            <!-- Left side: Definition and Vision - Hidden on mobile -->
+            <!-- Left side: Definition, Vision, Board, Announcements - Hidden on mobile -->
             <div class="hidden md:flex items-center space-x-3 lg:space-x-6 text-[10px] font-bold uppercase tracking-wider text-slate-600">
                 <a href="#about" class="hover:text-navy transition-colors whitespace-nowrap">Definition</a>
                 <a href="#vision" class="hover:text-navy transition-colors whitespace-nowrap">Vision</a>
+                <a href="#board-members" class="hover:text-navy transition-colors whitespace-nowrap">Board</a>
+                <a href="announcements.html" class="hover:text-navy transition-colors whitespace-nowrap">Announcements</a>
             </div>
 
             <div class="flex flex-col items-center px-2 md:px-4">
@@ -300,7 +302,7 @@
                 <span class="font-bold tracking-tighter text-[6px] md:text-[8px] text-navy mt-0.5">IVSA MANSOURA</span>
             </div>
             
-            <!-- Right side: Mission and Achievements -->
+            <!-- Right side: Mission, Achievements -->
             <div class="flex items-center justify-end space-x-3 md:space-x-6 text-[10px] font-bold uppercase tracking-wider text-slate-600">
                 <a href="#mission" class="hidden md:block hover:text-navy transition-colors whitespace-nowrap">Mission</a>
                 <div class="dropdown" onclick="toggleDropdown(this)">
@@ -323,13 +325,15 @@
     </nav>
 
     <main class="max-w-[1440px] mx-auto w-full">
-        <!-- Hero Section - Responsive -->
+        <!-- Hero Section - Responsive (added Announcements) -->
         <section id="home" class="relative min-h-[500px] md:h-[70vh] flex flex-col items-center justify-center text-center px-4 md:px-6 overflow-hidden hero-bg text-white rounded-2xl md:rounded-3xl">
             <!-- Desktop Navigation in Hero -->
             <div class="absolute top-3 md:top-6 w-full px-4 md:px-12 hidden md:grid grid-cols-3 items-center opacity-90">
                 <div class="flex space-x-4 lg:space-x-10 text-[10px] font-bold uppercase tracking-[0.2em] justify-start">
                     <a href="#about" class="cursor-pointer hover:text-gold transition-colors">Definition</a>
                     <a href="#vision" class="cursor-pointer hover:text-gold transition-colors">Vision</a>
+                    <a href="#board-members" class="cursor-pointer hover:text-gold transition-colors">Board</a>
+                    <a href="announcements.html" class="cursor-pointer hover:text-gold transition-colors">Announcements</a>
                 </div>
                 
                 <div class="flex flex-col items-center">
@@ -360,6 +364,8 @@
             <div class="absolute top-3 left-0 right-0 flex md:hidden flex-wrap justify-center gap-3 px-4">
                 <a href="#about" class="text-[8px] font-bold uppercase tracking-wider text-white/90 hover:text-gold">Definition</a>
                 <a href="#vision" class="text-[8px] font-bold uppercase tracking-wider text-white/90 hover:text-gold">Vision</a>
+                <a href="#board-members" class="text-[8px] font-bold uppercase tracking-wider text-white/90 hover:text-gold">Board</a>
+                <a href="announcements.html" class="text-[8px] font-bold uppercase tracking-wider text-white/90 hover:text-gold">Announcements</a>
                 <a href="#mission" class="text-[8px] font-bold uppercase tracking-wider text-white/90 hover:text-gold">Mission</a>
                 <div class="dropdown relative">
                     <span class="text-[8px] font-bold uppercase tracking-wider text-white/90 hover:text-gold flex items-center cursor-pointer">
@@ -394,7 +400,6 @@
             </div>
         </section>
 
-        <!-- All sections remain the same but with responsive classes already applied -->
         <!-- General Definition Section -->
         <section id="about" class="py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
             <div class="absolute top-0 right-0 w-1/3 h-full bg-[#f8fafc] -z-10 translate-x-1/4 skew-x-12"></div>
@@ -457,7 +462,7 @@
             </div>
         </section>
 
-        <!-- Mission Section -->
+        <!-- Mission Section (unchanged) -->
         <section id="mission" class="py-16 md:py-24 bg-white border-t border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-24 fade-in">
                 <div class="md:col-span-5 lg:col-span-4 space-y-4 md:space-y-6">
@@ -472,6 +477,35 @@
                     <div class="space-y-2 md:space-y-4">
                         <h4 class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#c2410c]">02. Collaborative Leadership</h4>
                         <p class="text-lg md:text-xl text-slate-700 leading-relaxed">Promoting the values of teamwork and active community engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BOARD MEMBERS SECTION (updated: no roles, year 2026) ========== -->
+        <section id="board-members" class="py-16 md:py-24 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="mb-10 md:mb-16 fade-in">
+                    <span class="section-tag block mb-2 md:mb-4 text-[10px] md:text-xs">Team 2026</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0a192f] leading-tight">Board <br><span class="serif italic font-normal text-gold">Members</span></h2>
+                </div>
+
+                <!-- Vertical image layout (professional, clear) -->
+                <div class="premium-card p-6 md:p-8 lg:p-10 max-w-2xl mx-auto fade-in">
+                    <div class="flex flex-col items-center text-center space-y-6">
+                        <div class="w-full max-w-md aspect-[3/4] gallery-box overflow-hidden rounded-2xl shadow-lg">
+                            <!-- Replace with your actual board image path -->
+                            <img src="/Images/Board Members.jpeg"IVSA Mansoura Board Members 2026" class="gallery-img w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="upload-placeholder" style="display: none;">
+                                <svg class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                <span class="text-[10px] md:text-xs uppercase font-bold tracking-widest text-slate-400">Board Photo</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-2xl md:text-3xl font-bold text-[#0a192f] serif">Executive Board 2026</h3>
+                            <p class="text-slate-500 max-w-lg mx-auto text-sm md:text-base">Dedicated students leading the chapter with passion, integrity, and a vision for global veterinary excellence.</p>
+                        </div>
+                        <!-- roles list removed as requested -->
                     </div>
                 </div>
             </div>
@@ -1101,7 +1135,7 @@
             </div>
         </section>
 
-        <!-- Cultural Exchanges Section (taller cards) -->
+        <!-- Cultural Exchanges Section (with 2 new cards: Pookode & Kenya) -->
         <section id="cultural-exchanges" class="py-16 md:py-24 bg-white border-t border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="mb-10 md:mb-16 fade-in">
@@ -1110,7 +1144,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-                    <!-- Exchange 1: IVSA Mannuthy, India -->
+                    <!-- Exchange 1: IVSA Mannuthy, India (kept) -->
                     <div class="premium-card p-5 md:p-6 lg:p-8 flex flex-col justify-between h-full tall-card fade-in">
                         <div class="space-y-4 md:space-y-6">
                             <div class="flex items-center space-x-3">
@@ -1133,7 +1167,7 @@
                         </div>
                     </div>
 
-                    <!-- Exchange 2: IVSA Philippines -->
+                    <!-- Exchange 2: IVSA Philippines (kept) -->
                     <div class="premium-card p-5 md:p-6 lg:p-8 flex flex-col justify-between h-full tall-card fade-in">
                         <div class="space-y-4 md:space-y-6">
                             <div class="flex items-center space-x-3">
@@ -1156,7 +1190,7 @@
                         </div>
                     </div>
 
-                    <!-- Exchange 3: IVSA Cambridge -->
+                    <!-- Exchange 3: IVSA Cambridge (kept) -->
                     <div class="premium-card p-5 md:p-6 lg:p-8 flex flex-col justify-between h-full tall-card fade-in">
                         <div class="space-y-4 md:space-y-6">
                             <div class="flex items-center space-x-3">
@@ -1179,7 +1213,7 @@
                         </div>
                     </div>
 
-                    <!-- Exchange 4: IVSA SAU, Bangladesh -->
+                    <!-- Exchange 4: IVSA SAU, Bangladesh (kept) -->
                     <div class="premium-card p-5 md:p-6 lg:p-8 flex flex-col justify-between h-full tall-card fade-in">
                         <div class="space-y-4 md:space-y-6">
                             <div class="flex items-center space-x-3">
@@ -1201,12 +1235,58 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- ========== NEW EXCHANGE CARD 5: IVSA POOKODE ========== -->
+                    <div class="premium-card p-5 md:p-6 lg:p-8 flex flex-col justify-between h-full tall-card fade-in">
+                        <div class="space-y-4 md:space-y-6">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center text-gold shadow-sm">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                                </div>
+                                <span class="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">India</span>
+                            </div>
+                            <h3 class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-[#0a192f] serif italic">Online exchange with IVSA Pookode, India</h3>
+                            <p class="text-slate-500 leading-relaxed text-xs md:text-sm lg:text-base font-light">
+                                Sharing knowledge on wildlife conservation, veterinary education in the Western Ghats, and student research.
+                            </p>
+                        </div>
+                        <div class="mt-4 md:mt-6 w-full aspect-[4/5] gallery-box">
+                            <img src="/Images/Pookode Exchange.jpeg" alt="IVSA Pookode Exchange" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="upload-placeholder" style="display: none;">
+                                <svg class="w-8 h-8 md:w-10 lg:w-12 mx-auto mb-2 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <span class="text-[8px] md:text-[9px] lg:text-[10px] uppercase font-bold tracking-widest text-slate-400">IVSA Pookode</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========== NEW EXCHANGE CARD 6: IVSA KENYA ========== -->
+                    <div class="premium-card p-5 md:p-6 lg:p-8 flex flex-col justify-between h-full tall-card fade-in">
+                        <div class="space-y-4 md:space-y-6">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center text-gold shadow-sm">
+                                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <span class="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Kenya</span>
+                            </div>
+                            <h3 class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-[#0a192f] serif italic">Online exchange with IVSA Kenya</h3>
+                            <p class="text-slate-500 leading-relaxed text-xs md:text-sm lg:text-base font-light">
+                                Discussions on wildlife medicine, community-based livestock programs, and One Health initiatives in East Africa.
+                            </p>
+                        </div>
+                        <div class="mt-4 md:mt-6 w-full aspect-[4/5] gallery-box">
+                            <img src="/Images/Kenya Exchange.jpeg" alt="IVSA Kenya Exchange" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="upload-placeholder" style="display: none;">
+                                <svg class="w-8 h-8 md:w-10 lg:w-12 mx-auto mb-2 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <span class="text-[8px] md:text-[9px] lg:text-[10px] uppercase font-bold tracking-widest text-slate-400">IVSA Kenya</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Professional Footer with updated details - Responsive -->
+    <!-- Professional Footer (unchanged, with YouTube and extra email) -->
     <footer class="bg-[#0a192f] text-white py-12 md:py-16 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
@@ -1224,7 +1304,7 @@
                     </p>
                 </div>
 
-                <!-- Contact Column -->
+                <!-- Contact Column (two emails) -->
                 <div class="col-span-1 text-center md:text-left">
                     <h4 class="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-6">Contact</h4>
                     <ul class="space-y-3 text-xs text-slate-300">
@@ -1236,10 +1316,14 @@
                             <svg class="w-4 h-4 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                             <span class="break-all text-xs">ivsaegypt.mansoura@ivsamo.org</span>
                         </li>
+                        <li class="flex items-center justify-center md:justify-start space-x-2">
+                            <svg class="w-4 h-4 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span class="break-all text-xs">ivsa.mansoura@gmail.com</span>
+                        </li>
                     </ul>
                 </div>
 
-                <!-- Social Media Column -->
+                <!-- Social Media Column (with YouTube) -->
                 <div class="col-span-1 md:col-span-2">
                     <h4 class="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-6 text-center md:text-left">Connect With Us</h4>
                     <div class="grid grid-cols-3 gap-3 md:gap-4">
@@ -1262,6 +1346,10 @@
                         <a href="https://www.tiktok.com/@ivsamansoura" target="_blank" class="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-2 text-xs text-slate-300 hover:text-white transition-colors">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.88-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.57-1.36 1.51-1.46 2.5-.05.5-.02 1.02.06 1.52.27 1.3 1.4 2.4 2.74 2.48 1.31.12 2.61-.58 3.22-1.7.24-.45.37-.96.37-1.48.04-3.01.02-6.02.03-9.03.01-1.82.01-3.63.02-5.45z"></path></svg>
                             <span class="text-[8px] md:text-xs">TikTok</span>
+                        </a>
+                        <a href="https://youtube.com/@ivsamansoura3724?si=U6XkSTuDsfP4yzbY" target="_blank" class="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-2 text-xs text-slate-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.996 2.996 0 00-2.11-2.11C19.66 3.5 12 3.5 12 3.5s-7.66 0-9.388.576a2.996 2.996 0 00-2.11 2.11C0 7.905 0 12 0 12s0 4.095.502 5.814a2.996 2.996 0 002.11 2.11C4.34 20.5 12 20.5 12 20.5s7.66 0 9.388-.576a2.996 2.996 0 002.11-2.11C24 16.095 24 12 24 12s0-4.095-.502-5.814zM9.545 15.568V8.432L15.318 12l-5.773 3.568z"></path></svg>
+                            <span class="text-[8px] md:text-xs">YouTube</span>
                         </a>
                     </div>
                 </div>
